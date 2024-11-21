@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawaiwala - Your Trusted Medicine Store</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Dawaiwala</h1>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#login" onclick="showLoginForm()">Login</a>
+        <a href="#signup" onclick="showSignUpForm()">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Dawaiwala</h2>
+      <p>Your one-stop destination for trusted medicines and health advice.</p>
+      <div class="search-bar">
+        <input id="search-box" type="text" placeholder="Enter medicine name or ingredient">
+        <button onclick="handleSearch()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Dawaiwala is committed to providing accurate information about medicines and their uses. We aim to bridge the gap between healthcare providers and patients by offering reliable, easy-to-access resources.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <i class="fas fa-pills fa-3x"></i>
+        <h3>Search Medicines</h3>
+        <p>Find detailed information about medicines and ingredients.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-notes-medical fa-3x"></i>
+        <h3>Health Advice</h3>
+        <p>Get professional advice tailored to your needs.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-shipping-fast fa-3x"></i>
+        <h3>Fast Delivery</h3>
+        <p>Order medicines online and receive them at your doorstep.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="login-section" style="display:none;">
+    <h2>Login</h2>
+    <form class="login-form">
+      <input type="email" placeholder="Enter your email" required>
+      <input type="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a></p>
+    </form>
+  </section>
+
+  <!-- Sign Up Section -->
+  <section id="signup" class="signup-section" style="display:none;">
+    <h2>Sign Up</h2>
+    <form class="signup-form">
+      <input type="text" placeholder="Enter your name" required>
+      <input type="email" placeholder="Enter your email" required>
+      <input type="password" placeholder="Create a password" required>
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Dawaiwala. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
